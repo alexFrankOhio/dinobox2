@@ -1,0 +1,37 @@
+so far I have:
+created an entry in httpRequests[] for the enviromental sensors
+initialized the entry in httpRequest with internal and external BME readings
+created a call back function for the HTTP request
+created a readBME function
+
+the call back function and the readBME function contain essentially nothing
+I need to create global variables which store the values for each sensor reading
+Eventually i will need a way to seperate the inside and outside readings for the BME, 
+
+I will likely also need to create a seperate task for the ccs811,
+				 as it has a specific setup, and prep time
+				 
+then the oxygen sensor will need calibrated/ tuned, we will need to find a way to true up the 
+	value, but once there it should be accurate
+then the relays will 
+
+ Ive created:
+ BME280_RawData *bmeDatIn;
+BME280_RawData *bmeDatOut;
+BME280Reading(void)
+enum EnviroIdx, 
+	whic contains the indexes of each variable
+    EnviroIdx_InTemp,
+    EnviroIdx_OutTemp,
+    EnviroIdx_InHumid,
+    EnviroIdx_OutHumid,
+    EnviroIdx_InPres,
+    EnviroIdx_OutPres,
+    EnviroIdx_MaxEnviro,
+    
+Int32 tempIn;
+Uint32 presIn;
+Uint32 humidIn;
+Int32 tempOut;
+Uint32 presOut;
+Uint32 humidOut;
