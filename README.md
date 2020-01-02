@@ -1,7 +1,7 @@
 ## Example Summary
 
-This example code adapted from the Out of Box experience with CC32xx devices. 
-All remaining information was provided with the OOB project, only kept because it is relavent to this project as well.
+This example is code adapted from the Out of Box experience with CC32xx devices. 
+All remaining information in this file was provided with the OOB project, only kept because it is relavent to this project as well.
 
 ## Peripherals Exercised
 
